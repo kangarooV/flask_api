@@ -1,0 +1,9 @@
+Hi {{ user.username }},
+
+plsase click on the fellowing link:
+
+{{ url_for('auth.confirm', token=token, _external=True) }}
+
+to confirm your account.
+
+Thank you.

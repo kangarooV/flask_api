@@ -1,0 +1,9 @@
+<p>Hi {{ user.username }},</p>
+
+<p>plsase click on the fellowing link:</p>
+
+<p>{{ url_for('auth.confirm', token=token, _external=True) }}</p>
+
+<p>to confirm your account.</p>
+
+<p>Thank you.</p>
