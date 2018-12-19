@@ -3,16 +3,6 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 
 class Config:
-    SECRET_KEY = os.environ.get('SECRET_KEY') or '505308382'
-    MAIL_SERVER = os.environ.get('MAIL_SERVER', 'smtp.qq.com')
-    MAIL_PORT = int(os.environ.get('MAIL_PORT', '465'))
-    MAIL_USE_SSL = os.environ.get('MAIL_USE_SSL', 'true').lower() in \
-        ['true', 'on', '1']
-    MAIL_USERNAME = '505308382@qq.com'
-    MAIL_PASSWORD = 'pqyqsskbpbefbiac'
-    FLASKY_MAIL_SUBJECT_PREFIX = '[Flasky]'
-    FLASKY_MAIL_SENDER = 'Flasky Admin <505308382@qq.com>'
-    FLASKY_ADMIN = '505308382@qq.com'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     FLASKY_POSTS_PER_PAGE = 20
     FLASKY_FOLLOWERS_PER_PAGE = 50
